@@ -21,3 +21,14 @@ QListWidget {
 QLabel {
   color: white;
 }
+
+QLineEdit {
+  border-color: rgb(75, 75, 75);
+  color: white;
+  padding: inherit;
+}
+
+QComboBox {
+  color: rgb(240, 240, 240);
+  padding: inherit;
+}

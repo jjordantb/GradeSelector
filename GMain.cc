@@ -1,6 +1,7 @@
 #include <QtGui>
 
 #include "GMain.h"
+#include <iostream>
 
 GMain::GMain()
 {
@@ -31,6 +32,7 @@ GMain::GMain()
 
 void GMain::reciveClasses(const QString &str1, const QString &str2)
 {
+  QFont font("default", 15);
   if (listWidget->count() < 5)
   {
     QString final = str1 + " : [" + str2 + "]";
@@ -40,6 +42,15 @@ void GMain::reciveClasses(const QString &str1, const QString &str2)
       dialog->setVisible(false);
     }
   }
+
+  int count = listWidget->count();
+  for(int i = 0; i < count; i++)
+  {
+    QListWidgetItem *item = listWidget->item(i);
+    item->setFont(font);
+    item->setSizeHint(QSize(item->sizeHint().width(), 35));
+  }
+
 }
 
 void GMain::addClass()
