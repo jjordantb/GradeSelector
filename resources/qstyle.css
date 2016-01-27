@@ -1,0 +1,23 @@
+QWidget {
+  background-color: rgb(50, 50, 50);
+}
+
+QPushButton {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  border-style: inset;
+  border-width: 0px;
+  border-color: rgb(75, 75, 75);
+}
+
+QListWidget {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  border-width: 0px;
+  border-style: inset;
+  border-color: rgb(75, 75, 75);
+}
+
+QLabel {
+  color: white;
+}
